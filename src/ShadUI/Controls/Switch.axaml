@@ -34,7 +34,7 @@
                     Name="PART_Container"
                     Orientation="Horizontal"
                     ReverseOrder="{TemplateBinding extensions:ToggleSwitchAssist.RightAlignedContent}"
-                    Spacing="8">
+                    Spacing="2">
                     <Panel>
                         <ContentPresenter
                             Content="{TemplateBinding OffContent}"

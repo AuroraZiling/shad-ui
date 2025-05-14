@@ -8,6 +8,8 @@
 
     <ControlTheme TargetType="ToggleButton" x:Key="{x:Type ToggleButton}">
         <Setter Property="MinHeight" Value="36" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Padding" Value="12,8" />
         <Setter Property="Background" Value="{DynamicResource BackgroundColor}" />
         <Setter Property="BorderBrush" Value="{DynamicResource BorderColor}" />
         <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />
@@ -46,8 +48,6 @@
 
         <!--  Default  -->
         <Style Selector="^.Default">
-            <Setter Property="FontSize" Value="14" />
-            <Setter Property="Padding" Value="12,8" />
             <Setter Property="Background" Value="{DynamicResource CardBackgroundColor}" />
             <Setter Property="BorderBrush" Value="{DynamicResource BorderColor}" />
             <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />
@@ -92,8 +92,6 @@
 
         <!--  Outline  -->
         <Style Selector="^.Outline">
-            <Setter Property="FontSize" Value="14" />
-            <Setter Property="Padding" Value="12,8" />
             <Setter Property="Background" Value="{DynamicResource CardBackgroundColor}" />
             <Setter Property="BorderThickness" Value="1" />
             <Setter Property="BorderBrush" Value="{DynamicResource BorderColor}" />

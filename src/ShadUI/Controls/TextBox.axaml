@@ -144,6 +144,7 @@
 
     <ControlTheme TargetType="TextBox" x:Key="{x:Type TextBox}">
         <Setter Property="FontSize" Value="14" />
+        <Setter Property="Cursor" Value="IBeam"></Setter>
         <Setter Property="LineHeight" Value="20" />
         <Setter Property="FontFamily" Value="{DynamicResource FontFamily}" />
         <Setter Property="Background" Value="{DynamicResource BackgroundColor}" />

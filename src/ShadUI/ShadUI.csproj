@@ -23,14 +23,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Avalonia" Version="11.2.6" />
-        <PackageReference Include="Avalonia.Skia" Version="11.2.6" />
-        <PackageReference Include="MinVer" Version="6.0.0">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-        <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.2.6" />
-        <PackageReference Include="Avalonia.Themes.Simple" Version="11.2.6" />
+        <PackageReference Include="Avalonia" />
+        <PackageReference Include="Avalonia.Skia" />
+        <PackageReference Include="MinVer"/>
+        <PackageReference Include="Avalonia.Controls.DataGrid" />
+        <PackageReference Include="Avalonia.Themes.Simple" />
     </ItemGroup>
 
     <PropertyGroup>
@@ -40,6 +37,13 @@
     <ItemGroup>
         <None Include="..\..\README.md" Pack="true" PackagePath="\" />
         <None Include="..\..\icon.png" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Controls\ContentExpandControl.axaml.cs">
+        <DependentUpon>ContentExpandControl.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
