@@ -146,7 +146,7 @@ public class ThemeWatcher
         {
             ThemeMode.Dark => ThemeVariant.Dark,
             ThemeMode.Light => ThemeVariant.Light,
-            ThemeMode.AcrylicDark => new ThemeVariant("AcrylicDark", ThemeVariant.Dark),
+            ThemeMode.AcrylicDark => new ThemeVariant("Acrylic", ThemeVariant.Dark),
             ThemeMode.AcrylicLight => new ThemeVariant("AcrylicLight", ThemeVariant.Light),
             _ => ThemeVariant.Default
         };

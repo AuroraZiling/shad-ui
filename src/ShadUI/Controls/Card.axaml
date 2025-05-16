@@ -69,11 +69,10 @@
                                     CornerRadius="{TemplateBinding CornerRadius}">
                                     <ExperimentalAcrylicBorder.Material>
                                         <ExperimentalAcrylicMaterial
-                                            BackgroundSource="Digger"
-                                            TintOpacity="{TemplateBinding TintOpacity}"
-                                            MaterialOpacity="{TemplateBinding AcrylicOpacity}"
-                                            FallbackColor="{DynamicResource CardBackgroundColor}"
-                                            TintColor="{DynamicResource CardBackgroundColor}" />
+                                            TintOpacity="0.2"
+                                            MaterialOpacity="0.4"
+                                            FallbackColor="#15000000"
+                                            TintColor="Black" />
                                     </ExperimentalAcrylicBorder.Material>
                                 </ExperimentalAcrylicBorder>
                                 <StackPanel Margin="{TemplateBinding Padding}">
