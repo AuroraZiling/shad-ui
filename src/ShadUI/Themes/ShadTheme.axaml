@@ -11,8 +11,8 @@
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceInclude Source="/Themes/Light.axaml" x:Key="Light" />
                 <ResourceInclude Source="/Themes/Dark.axaml" x:Key="Dark" />
-                <ResourceInclude Source="/Themes/AcrylicLight.axaml" x:Key="{x:Static themes:ThemeVariants.AcrylicDark}" />
-                <ResourceInclude Source="/Themes/AcrylicDark.axaml" x:Key="{x:Static themes:ThemeVariants.AcrylicLight}" />
+                <ResourceInclude Source="/Themes/AcrylicLight.axaml" x:Key="{x:Static themes:ThemeVariants.AcrylicLight}" />
+                <ResourceInclude Source="/Themes/AcrylicDark.axaml" x:Key="{x:Static themes:ThemeVariants.AcrylicDark}" />
             </ResourceDictionary.ThemeDictionaries>
         </ResourceDictionary>
     </Styles.Resources>

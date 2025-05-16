@@ -5,11 +5,11 @@
 
     <Color x:Key="BackgroundColor">Transparent</Color>
     <Color x:Key="MutedColor">#A0A0A9</Color>
-    <Color x:Key="BorderColor">#353535</Color>
+    <Color x:Key="BorderColor">#3DFFFFFF</Color>
 
-    <Color x:Key="CardBackgroundColor">#09090B</Color>
-    <Color x:Key="SidebarBackgroundColor">#0A0A0D</Color>
-    <Color x:Key="TitleBarBackgroundColor">#0A0A0D</Color>
+    <Color x:Key="CardBackgroundColor">Transparent</Color>
+    <Color x:Key="SidebarBackgroundColor">Transparent</Color>
+    <Color x:Key="TitleBarBackgroundColor">Transparent</Color>
     <Color x:Key="PopupBackgroundColor">#0A0A0D</Color>
     <Color x:Key="WindowButtonHoverColor">#0DFAFAFA</Color>
 
