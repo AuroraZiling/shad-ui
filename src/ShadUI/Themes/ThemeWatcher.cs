@@ -1,5 +1,4 @@
-﻿using System;
-using Avalonia;
+﻿using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Media;
 using Avalonia.Styling;
@@ -146,7 +145,7 @@ public class ThemeWatcher
         {
             ThemeMode.Dark => ThemeVariant.Dark,
             ThemeMode.Light => ThemeVariant.Light,
-            ThemeMode.AcrylicDark => new ThemeVariant("Acrylic", ThemeVariant.Dark),
+            ThemeMode.Acrylic => new ThemeVariant("Acrylic", ThemeVariant.Dark),
             _ => ThemeVariant.Default
         };
 
