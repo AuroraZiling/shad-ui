@@ -52,4 +52,34 @@ public class Card : ContentControl
         get => GetValue(HasShadowProperty);
         set => SetValue(HasShadowProperty, value);
     }
+
+    /// <summary>
+    ///     Defines the <see cref="AcrylicOpacity" /> property.
+    /// </summary>
+    public static readonly StyledProperty<double> TintOpacityProperty =
+        AvaloniaProperty.Register<Card, double>(nameof(TintOpacity), 0.1d);
+
+    /// <summary>
+    ///     Gets or sets the opacity of the tint effect on the card.
+    /// </summary>
+    public double TintOpacity
+    {
+        get => GetValue(TintOpacityProperty);
+        set => SetValue(TintOpacityProperty, value);
+    }
+
+    /// <summary>
+    ///     Defines the <see cref="AcrylicOpacity" /> property.
+    /// </summary>
+    public static readonly StyledProperty<double> AcrylicOpacityProperty =
+        AvaloniaProperty.Register<Card, double>(nameof(AcrylicOpacity), 0.2d);
+
+    /// <summary>
+    ///     Gets or sets the opacity of the acrylic effect on the card.
+    /// </summary>
+    public double AcrylicOpacity
+    {
+        get => GetValue(AcrylicOpacityProperty);
+        set => SetValue(AcrylicOpacityProperty, value);
+    }
 }

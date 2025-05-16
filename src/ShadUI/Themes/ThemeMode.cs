@@ -18,5 +18,15 @@ public enum ThemeMode
     /// <summary>
     ///     The dark theme.
     /// </summary>
-    Dark
+    Dark,
+
+    /// <summary>
+    ///     The light theme with acrylic effect.
+    /// </summary>
+    AcrylicLight,
+
+    /// <summary>
+    ///     The dark theme with acrylic effect.
+    /// </summary>
+    AcrylicDark,
 }
