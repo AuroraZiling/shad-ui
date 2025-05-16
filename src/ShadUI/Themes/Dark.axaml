@@ -1,7 +1,4 @@
-﻿<ResourceDictionary
-    xmlns="https://github.com/avaloniaui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:shadui="clr-namespace:ShadUI.Controls;assembly=ShadUI">
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <Color x:Key="ForegroundColor">#FAFAFA</Color>
     <Color x:Key="ForegroundLeadColor">#A1A1AA</Color>
@@ -66,12 +63,4 @@
     <Color x:Key="ErrorColor10">#19FF1744</Color>
     <Color x:Key="ErrorColor5">#0DFF1744</Color>
 
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceInclude Source="avares://ShadUI/Controls/Card.axaml" />
-    </ResourceDictionary.MergedDictionaries>
-
-    <ControlTheme
-        BasedOn="{StaticResource CardControlTheme}"
-        TargetType="{x:Type shadui:Card}"
-        x:Key="{x:Type shadui:Card}" />
 </ResourceDictionary>
