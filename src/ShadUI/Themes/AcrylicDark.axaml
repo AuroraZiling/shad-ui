@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary
     xmlns="https://github.com/avaloniaui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:shadui="clr-namespace:ShadUI.Controls;assembly=ShadUI">
 
     <Color x:Key="ForegroundColor">#FAFAFA</Color>
     <Color x:Key="ForegroundLeadColor">#A1A1AA</Color>
@@ -9,9 +10,9 @@
     <Color x:Key="MutedColor">#A0A0A9</Color>
     <Color x:Key="BorderColor">#353535</Color>
 
-    <Color x:Key="CardBackgroundColor">#3309090B</Color>
-    <Color x:Key="SidebarBackgroundColor">#330A0A0D</Color>
-    <Color x:Key="TitleBarBackgroundColor">#330A0A0D</Color>
+    <Color x:Key="CardBackgroundColor">#09090B</Color>
+    <Color x:Key="SidebarBackgroundColor">#0A0A0D</Color>
+    <Color x:Key="TitleBarBackgroundColor">#0A0A0D</Color>
     <Color x:Key="PopupBackgroundColor">#0A0A0D</Color>
     <Color x:Key="WindowButtonHoverColor">#0DFAFAFA</Color>
 
@@ -65,4 +66,12 @@
     <Color x:Key="ErrorColor10">#19FF1744</Color>
     <Color x:Key="ErrorColor5">#0DFF1744</Color>
 
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceInclude Source="avares://ShadUI/Controls/Card.axaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <ControlTheme
+        BasedOn="{StaticResource AcrylicCardControlTheme}"
+        TargetType="{x:Type shadui:Card}"
+        x:Key="{x:Type shadui:Card}" />
 </ResourceDictionary>
