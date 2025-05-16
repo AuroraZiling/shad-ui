@@ -50,7 +50,7 @@
 
     <ControlTheme TargetType="controls:Window" x:Key="WindowTheme">
         <Setter Property="Margin" Value="0" />
-        <Setter Property="Background" Value="{DynamicResource WindowBackgroundColor}" />
+        <Setter Property="Background" Value="Transparent" />
         <Setter Property="FontFamily" Value="{DynamicResource FontFamily}" />
         <Setter Property="TransparencyLevelHint" Value="Transparent" />
         <Setter Property="SystemDecorations" Value="{OnPlatform Full, Linux=None, x:TypeArguments=SystemDecorations}" />

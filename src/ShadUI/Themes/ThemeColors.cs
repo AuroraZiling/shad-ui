@@ -16,7 +16,7 @@ public class ThemeColors
     public Color CardBackgroundColor { get; set; }
     public Color SidebarBackgroundColor { get; set; }
     public Color TitleBarBackgroundColor { get; set; }
-    public Color WindowBackgroundColor { get; set; }
+    public Color PopupBackgroundColor { get; set; }
     public Color WindowButtonHoverColor { get; set; }
 
     // Switch Colors

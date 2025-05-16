@@ -65,7 +65,7 @@ public class ThemeWatcher
             CardBackgroundColor = TryGetColor("CardBackgroundColor"),
             SidebarBackgroundColor = TryGetColor("SidebarBackgroundColor"),
             TitleBarBackgroundColor = TryGetColor("TitleBarBackgroundColor"),
-            WindowBackgroundColor = TryGetColor("WindowBackgroundColor"),
+            PopupBackgroundColor = TryGetColor("PopupBackgroundColor"),
             WindowButtonHoverColor = TryGetColor("WindowButtonHoverColor"),
             // Switch Colors
             SwitchForegroundColor = TryGetColor("SwitchForegroundColor"),
@@ -146,6 +146,8 @@ public class ThemeWatcher
         {
             ThemeMode.Dark => ThemeVariant.Dark,
             ThemeMode.Light => ThemeVariant.Light,
+            ThemeMode.AcrylicDark => new ThemeVariant("AcrylicDark", ThemeVariant.Dark),
+            ThemeMode.AcrylicLight => new ThemeVariant("AcrylicLight", ThemeVariant.Light),
             _ => ThemeVariant.Default
         };
 
