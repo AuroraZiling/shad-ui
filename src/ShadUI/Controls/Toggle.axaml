@@ -36,11 +36,8 @@
             </ControlTemplate>
         </Setter>
         <Style Selector="^:checked /template/ Border#RootBorder">
-            <Setter Property="Background" Value="{DynamicResource GhostColor}" />
-            <Setter Property="BorderBrush" Value="{DynamicResource GhostColor}" />
-        </Style>
-        <Style Selector="^:pointerover /template/ Border#RootBorder">
-            <Setter Property="BorderBrush" Value="{DynamicResource GhostColor}" />
+            <Setter Property="Background" Value="{DynamicResource PrimaryColor}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource PrimaryColor}" />
         </Style>
         <Style Selector="^:disabled">
             <Setter Property="Opacity" Value="0.50" />
@@ -92,9 +89,52 @@
 
         <!--  Outline  -->
         <Style Selector="^.Outline">
-            <Setter Property="Background" Value="{DynamicResource CardBackgroundColor}" />
+            <Setter Property="Background" Value="Transparent" />
             <Setter Property="BorderThickness" Value="1" />
             <Setter Property="BorderBrush" Value="{DynamicResource BorderColor}" />
+            <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />
+            <Style Selector="^ /template/ Border#RootBorder">
+                <Setter Property="Transitions">
+                    <Transitions>
+                        <BrushTransition Duration="0:0:0.2" Property="BorderBrush" />
+                    </Transitions>
+                </Setter>
+            </Style>
+            <Style Selector="^ /template/ TextBlock">
+                <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />
+                <Setter Property="Transitions">
+                    <Transitions>
+                        <BrushTransition Duration="0:0:0.3" Property="Foreground" />
+                    </Transitions>
+                </Setter>
+            </Style>
+            <Style Selector="^ /template/ ContentPresenter">
+                <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />
+                <Setter Property="Transitions">
+                    <Transitions>
+                        <BrushTransition Duration="0:0:0.3" Property="Foreground" />
+                    </Transitions>
+                </Setter>
+            </Style>
+            <Style Selector="^:pointerover /template/ Border#RootBorder">
+                <Setter Property="BorderBrush" Value="{DynamicResource OutlineColor}" />
+            </Style>
+
+            <Style Selector="^:pressed">
+                <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
+                    <Setter Property="RenderTransform">
+                        <Setter.Value>
+                            <ScaleTransform ScaleX="0.95" ScaleY="0.95" />
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Style>
+        </Style>
+
+        <!--  Ghost  -->
+        <Style Selector="^.Ghost">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
             <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />
             <Style Selector="^ /template/ Border#RootBorder">
                 <Setter Property="Transitions">
@@ -121,10 +161,13 @@
                 </Setter>
             </Style>
             <Style Selector="^:pointerover /template/ Border#RootBorder">
-                <Setter Property="Background" Value="{DynamicResource OutlineColor}" />
-                <Setter Property="BorderBrush" Value="{DynamicResource OutlineColor}" />
+                <Setter Property="Background" Value="{DynamicResource GhostColor}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource GhostColor}" />
             </Style>
-
+            <Style Selector="^:checked /template/ Border#RootBorder">
+                <Setter Property="Background" Value="{DynamicResource PrimaryColor75}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource PrimaryColor75}" />
+            </Style>
             <Style Selector="^:pressed">
                 <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
                     <Setter Property="RenderTransform">

@@ -5,9 +5,6 @@
     <Design.PreviewWith>
         <Panel Margin="48,24" MaxWidth="670">
             <StackPanel Spacing="32">
-                <StackPanel.Styles>
-                    <StyleInclude Source="Card.axaml" />
-                </StackPanel.Styles>
                 <StackPanel Spacing="8">
                     <TextBlock Classes="h3" Text="h1" />
                     <Separator Margin="0" />
@@ -126,6 +123,18 @@
             </StackPanel>
         </Panel>
     </Design.PreviewWith>
+
+    <Style Selector="TextBlock">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />
+    </Style>
+
+    <Style Selector="ContentPresenter">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />
+    </Style>
 
     <Style Selector="TextBlock.h1">
         <Setter Property="FontSize" Value="48" />

@@ -23,12 +23,7 @@ public static class ThemeVariants
     public static readonly ThemeVariant Light = ThemeVariant.Light;
 
     /// <summary>
-    ///     The acrylic dark theme variant.
+    ///     The acrylic theme variant.
     /// </summary>
-    public static readonly ThemeVariant AcrylicDark = new("AcrylicDark", Dark);
-
-    /// <summary>
-    ///     The acrylic light theme variant.
-    /// </summary>
-    public static readonly ThemeVariant AcrylicLight = new("AcrylicLight", Light);
+    public static readonly ThemeVariant Acrylic = new("Acrylic", Dark);
 }

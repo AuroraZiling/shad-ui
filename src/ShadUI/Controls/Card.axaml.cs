@@ -1,5 +1,7 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Controls.Primitives;
+using ShadUI.Themes;
 
 namespace ShadUI.Controls;
 
@@ -53,33 +55,18 @@ public class Card : ContentControl
         set => SetValue(HasShadowProperty, value);
     }
 
-    /// <summary>
-    ///     Defines the <see cref="AcrylicOpacity" /> property.
-    /// </summary>
-    public static readonly StyledProperty<double> TintOpacityProperty =
-        AvaloniaProperty.Register<Card, double>(nameof(TintOpacity), 0.1d);
-
-    /// <summary>
-    ///     Gets or sets the opacity of the tint effect on the card.
-    /// </summary>
-    public double TintOpacity
+    /// <inheritdoc cref="OnApplyTemplate"/>
+    protected override void OnApplyTemplate(TemplateAppliedEventArgs e)
     {
-        get => GetValue(TintOpacityProperty);
-        set => SetValue(TintOpacityProperty, value);
-    }
+        base.OnApplyTemplate(e);
 
-    /// <summary>
-    ///     Defines the <see cref="AcrylicOpacity" /> property.
-    /// </summary>
-    public static readonly StyledProperty<double> AcrylicOpacityProperty =
-        AvaloniaProperty.Register<Card, double>(nameof(AcrylicOpacity), 0.2d);
-
-    /// <summary>
-    ///     Gets or sets the opacity of the acrylic effect on the card.
-    /// </summary>
-    public double AcrylicOpacity
-    {
-        get => GetValue(AcrylicOpacityProperty);
-        set => SetValue(AcrylicOpacityProperty, value);
+        if (e.NameScope.Find<ExperimentalAcrylicBorder>("PART_AcrylicBorder") is { } acrylicBorder)
+        {
+            acrylicBorder.IsVisible = ActualThemeVariant == ThemeVariants.Acrylic;
+            ActualThemeVariantChanged += delegate
+            {
+                acrylicBorder.IsVisible = ActualThemeVariant == ThemeVariants.Acrylic;
+            };
+        }
     }
 }
