@@ -54,7 +54,7 @@
                             VerticalOffset="{TemplateBinding extensions:MenuItemAssist.PopupVerticalOffset}">
                             <LayoutTransformControl Name="PART_LayoutTransform" RenderTransformOrigin="50%, 0%">
                                 <Border
-                                    Background="{DynamicResource CardBackgroundColor}"
+                                    Background="{DynamicResource PopupBackgroundColor}"
                                     BorderBrush="{DynamicResource BorderColor}"
                                     BorderThickness="1"
                                     BoxShadow="{DynamicResource Shadow}"

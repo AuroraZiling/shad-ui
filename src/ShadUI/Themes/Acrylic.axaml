@@ -10,7 +10,7 @@
     <Color x:Key="CardBackgroundColor">#15000000</Color>
     <Color x:Key="SidebarBackgroundColor">#15000000</Color>
     <Color x:Key="TitleBarBackgroundColor">#15000000</Color>
-    <Color x:Key="PopupBackgroundColor">#0A0A0D</Color>
+    <Color x:Key="PopupBackgroundColor">#5A5A5D</Color>
     <Color x:Key="WindowButtonHoverColor">#0DFAFAFA</Color>
 
     <Color x:Key="SwitchBackgroundColor">#27272A</Color>
