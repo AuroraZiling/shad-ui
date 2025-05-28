@@ -40,7 +40,6 @@
                             </Grid.ColumnDefinitions>
                             <ContentPresenter
                                 Content="{TemplateBinding Icon}"
-                                Height="8"
                                 HorizontalAlignment="Center"
                                 IsVisible="{TemplateBinding Icon,
                                                             Converter={x:Static ObjectConverters.IsNotNull}}"

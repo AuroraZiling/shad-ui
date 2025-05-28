@@ -117,6 +117,7 @@
                 </Setter>
             </Style>
             <Style Selector="^:pointerover /template/ Border#RootBorder">
+                <Setter Property="Background" Value="{DynamicResource OutlineColor}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource OutlineColor}" />
             </Style>
 
