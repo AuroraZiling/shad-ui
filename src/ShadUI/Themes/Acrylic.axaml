@@ -25,12 +25,12 @@
     <Color x:Key="SecondaryColor">#2C2C30</Color>
     <Color x:Key="SecondaryColor75">#BF2C2C30</Color>
     <Color x:Key="SecondaryColor50">#802C2C30</Color>
-    <Color x:Key="SecondaryForegroundColor">#FFFFFF</Color>
+    <Color x:Key="SecondaryForegroundColor">#FAFAFA</Color>
 
     <Color x:Key="DestructiveColor">#C82323</Color>
     <Color x:Key="DestructiveColor75">#BFC82323</Color>
     <Color x:Key="DestructiveColor50">#80C82323</Color>
-    <Color x:Key="DestructiveForegroundColor">#FFFFFF</Color>
+    <Color x:Key="DestructiveForegroundColor">#FAFAFA</Color>
 
     <Color x:Key="TabItemSelectedColor">#3FB4B4B4</Color>
     <Color x:Key="TabItemsBackgroundColor">#27272A</Color>

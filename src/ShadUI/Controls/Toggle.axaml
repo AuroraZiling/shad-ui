@@ -75,6 +75,14 @@
             <Style Selector="^:pointerover /template/ Border#RootBorder">
                 <Setter Property="Background" Value="{DynamicResource GhostColor}" />
             </Style>
+            <Style Selector="^:checked /template/ Border#RootBorder">
+                <Setter Property="Background" Value="{DynamicResource PrimaryColor75}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource PrimaryColor75}" />
+            </Style>
+            <Style Selector="^:checked:pointerover /template/ Border#RootBorder">
+                <Setter Property="Background" Value="{DynamicResource PrimaryColor50}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource PrimaryColor50}" />
+            </Style>
 
             <Style Selector="^:pressed">
                 <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
@@ -119,6 +127,14 @@
             <Style Selector="^:pointerover /template/ Border#RootBorder">
                 <Setter Property="Background" Value="{DynamicResource OutlineColor}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource OutlineColor}" />
+            </Style>
+            <Style Selector="^:checked /template/ Border#RootBorder">
+                <Setter Property="Background" Value="{DynamicResource PrimaryColor75}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource PrimaryColor75}" />
+            </Style>
+            <Style Selector="^:checked:pointerover /template/ Border#RootBorder">
+                <Setter Property="Background" Value="{DynamicResource PrimaryColor50}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource PrimaryColor50}" />
             </Style>
 
             <Style Selector="^:pressed">
@@ -168,6 +184,10 @@
             <Style Selector="^:checked /template/ Border#RootBorder">
                 <Setter Property="Background" Value="{DynamicResource PrimaryColor75}" />
                 <Setter Property="BorderBrush" Value="{DynamicResource PrimaryColor75}" />
+            </Style>
+            <Style Selector="^:checked:pointerover /template/ Border#RootBorder">
+                <Setter Property="Background" Value="{DynamicResource PrimaryColor50}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource PrimaryColor50}" />
             </Style>
             <Style Selector="^:pressed">
                 <Style Selector="^ /template/ ContentPresenter#PART_ContentPresenter">
