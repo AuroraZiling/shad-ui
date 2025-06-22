@@ -62,69 +62,33 @@
                             BorderThickness="{TemplateBinding BorderThickness}"
                             CornerRadius="{TemplateBinding CornerRadius}"
                             Name="PART_Container">
-                            <StackPanel Margin="{TemplateBinding Padding}">
-                                <ContentPresenter
-                                    Content="{TemplateBinding Header}"
-                                    IsVisible="{TemplateBinding Header, Converter={x:Static ObjectConverters.IsNotNull}}"
-                                    Margin="0,0,0,24" />
-                                <ContentPresenter Content="{TemplateBinding Content}" />
-                                <ContentPresenter
-                                    Content="{TemplateBinding Footer}"
-                                    IsVisible="{TemplateBinding Footer, Converter={x:Static ObjectConverters.IsNotNull}}"
-                                    Margin="0,24,0,0" />
-                            </StackPanel>
-                        </Border>
-                    </Border>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-        <Style Selector="^[HasShadow=True]">
-            <Style Selector="^ /template/ Border#PART_Container">
-                <Setter Property="BoxShadow" Value="0 2 4 0 #20000000" />
-            </Style>
-            <Style Selector="^ /template/ Border#PART_OuterBorder">
-                <Setter Property="Padding" Value="2,0,2,4" />
-            </Style>
-        </Style>
-    </ControlTheme>
-
-    <ControlTheme TargetType="{x:Type shadui:Card}" x:Key="AcrylicCardControlTheme">
-        <Setter Property="Padding" Value="24" />
-        <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="Background" Value="{DynamicResource CardBackgroundColor}" />
-        <Setter Property="BorderBrush" Value="{DynamicResource BorderColor}" />
-        <Setter Property="CornerRadius" Value="{DynamicResource XlCornerRadius}" />
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate>
-                    <Border Name="PART_OuterBorder" Margin="{TemplateBinding Margin}">
-                        <Border
-                            Background="{TemplateBinding Background}"
-                            BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}"
-                            CornerRadius="{TemplateBinding CornerRadius}">
-                            <ExperimentalAcrylicBorder Name="PART_Container" CornerRadius="{TemplateBinding CornerRadius}">
-                                <ExperimentalAcrylicBorder.Material>
-                                    <ExperimentalAcrylicMaterial
-                                        BackgroundSource="Digger"
-                                        TintOpacity="{TemplateBinding TintOpacity}"
-                                        MaterialOpacity="{TemplateBinding AcrylicOpacity}"
-                                        FallbackColor="{DynamicResource CardBackgroundColor}"
-                                        TintColor="{DynamicResource CardBackgroundColor}" />
-                                </ExperimentalAcrylicBorder.Material>
-
+                            <Panel>
+                                <ExperimentalAcrylicBorder
+                                    Name="PART_AcrylicBorder"
+                                    IsVisible="False"
+                                    CornerRadius="{TemplateBinding CornerRadius}">
+                                    <ExperimentalAcrylicBorder.Material>
+                                        <ExperimentalAcrylicMaterial
+                                            TintOpacity="0.2"
+                                            MaterialOpacity="0.4"
+                                            FallbackColor="#15000000"
+                                            TintColor="Black" />
+                                    </ExperimentalAcrylicBorder.Material>
+                                </ExperimentalAcrylicBorder>
                                 <StackPanel Margin="{TemplateBinding Padding}">
                                     <ContentPresenter
-                                        Margin="0,0,0,24"
                                         Content="{TemplateBinding Header}"
-                                        IsVisible="{TemplateBinding Header, Converter={x:Static ObjectConverters.IsNotNull}}" />
+                                        IsVisible="{TemplateBinding Header,
+                                                                    Converter={x:Static ObjectConverters.IsNotNull}}"
+                                        Margin="0,0,0,24" />
                                     <ContentPresenter Content="{TemplateBinding Content}" />
                                     <ContentPresenter
-                                        Margin="0,24,0,0"
                                         Content="{TemplateBinding Footer}"
-                                        IsVisible="{TemplateBinding Footer, Converter={x:Static ObjectConverters.IsNotNull}}" />
+                                        IsVisible="{TemplateBinding Footer,
+                                                                    Converter={x:Static ObjectConverters.IsNotNull}}"
+                                        Margin="0,24,0,0" />
                                 </StackPanel>
-                            </ExperimentalAcrylicBorder>
+                            </Panel>
                         </Border>
                     </Border>
                 </ControlTemplate>
@@ -139,5 +103,10 @@
             </Style>
         </Style>
     </ControlTheme>
+
+    <ControlTheme
+        BasedOn="{StaticResource CardControlTheme}"
+        TargetType="{x:Type shadui:Card}"
+        x:Key="{x:Type shadui:Card}" />
 
 </ResourceDictionary>

@@ -11,6 +11,7 @@
         <ResourceInclude Source="avares://ShadUI/Controls/CalendarDatePicker.axaml" />
         <ResourceInclude Source="avares://ShadUI/Controls/CalendarItem.axaml" />
         <ResourceInclude Source="avares://ShadUI/Controls/CalendarDayButton.axaml" />
+        <ResourceInclude Source="avares://ShadUI/Controls/Card.axaml" />
         <ResourceInclude Source="avares://ShadUI/Controls/CardDescription.axaml" />
         <ResourceInclude Source="avares://ShadUI/Controls/CardTitle.axaml" />
         <ResourceInclude Source="avares://ShadUI/Controls/CheckBox.axaml" />

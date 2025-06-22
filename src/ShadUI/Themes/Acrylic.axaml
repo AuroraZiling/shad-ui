@@ -1,29 +1,26 @@
-﻿<ResourceDictionary
-    xmlns="https://github.com/avaloniaui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:shadui="clr-namespace:ShadUI.Controls;assembly=ShadUI">
+﻿<ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <Color x:Key="ForegroundColor">#FAFAFA</Color>
+    <Color x:Key="ForegroundColor">#FFFFFF</Color>
     <Color x:Key="ForegroundLeadColor">#A1A1AA</Color>
 
     <Color x:Key="BackgroundColor">Transparent</Color>
     <Color x:Key="MutedColor">#A0A0A9</Color>
-    <Color x:Key="BorderColor">#353535</Color>
+    <Color x:Key="BorderColor">#3DFFFFFF</Color>
 
-    <Color x:Key="CardBackgroundColor">#09090B</Color>
-    <Color x:Key="SidebarBackgroundColor">#0A0A0D</Color>
-    <Color x:Key="TitleBarBackgroundColor">#0A0A0D</Color>
-    <Color x:Key="PopupBackgroundColor">#0A0A0D</Color>
+    <Color x:Key="CardBackgroundColor">#15000000</Color>
+    <Color x:Key="SidebarBackgroundColor">#15000000</Color>
+    <Color x:Key="TitleBarBackgroundColor">#15000000</Color>
+    <Color x:Key="PopupBackgroundColor">#5A5A5D</Color>
     <Color x:Key="WindowButtonHoverColor">#0DFAFAFA</Color>
 
     <Color x:Key="SwitchBackgroundColor">#27272A</Color>
     <Color x:Key="SwitchForegroundColor">#09090B</Color>
 
-    <Color x:Key="PrimaryColor">#FAFAFA</Color>
-    <Color x:Key="PrimaryColor75">#BFFAFAFA</Color>
-    <Color x:Key="PrimaryColor50">#80FAFAFA</Color>
-    <Color x:Key="PrimaryColor10">#19FAFAFA</Color>
-    <Color x:Key="PrimaryForegroundColor">#18181B</Color>
+    <Color x:Key="PrimaryColor">#295FED</Color>
+    <Color x:Key="PrimaryColor75">#BF295FED</Color>
+    <Color x:Key="PrimaryColor50">#80295FED</Color>
+    <Color x:Key="PrimaryColor10">#19295FED</Color>
+    <Color x:Key="PrimaryForegroundColor">#FFFFFF</Color>
 
     <Color x:Key="SecondaryColor">#2C2C30</Color>
     <Color x:Key="SecondaryColor75">#BF2C2C30</Color>
@@ -35,11 +32,11 @@
     <Color x:Key="DestructiveColor50">#80C82323</Color>
     <Color x:Key="DestructiveForegroundColor">#FAFAFA</Color>
 
-    <Color x:Key="TabItemSelectedColor">#09090B</Color>
+    <Color x:Key="TabItemSelectedColor">#3FB4B4B4</Color>
     <Color x:Key="TabItemsBackgroundColor">#27272A</Color>
-    <Color x:Key="OutlineColor">#BF27272A</Color>
-    <Color x:Key="GhostColor">#27272A</Color>
-    <Color x:Key="GhostHoverColor">#121214</Color>
+    <Color x:Key="OutlineColor">#5F27272A</Color>
+    <Color x:Key="GhostColor">#3F27272A</Color>
+    <Color x:Key="GhostHoverColor">#3F121214</Color>
 
     <Color x:Key="BusyAreaOverlayColor">#000000</Color>
     <Color x:Key="DialogOverlayColor">#000000</Color>
@@ -66,12 +63,4 @@
     <Color x:Key="ErrorColor10">#19FF1744</Color>
     <Color x:Key="ErrorColor5">#0DFF1744</Color>
 
-    <ResourceDictionary.MergedDictionaries>
-        <ResourceInclude Source="avares://ShadUI/Controls/Card.axaml" />
-    </ResourceDictionary.MergedDictionaries>
-
-    <ControlTheme
-        BasedOn="{StaticResource AcrylicCardControlTheme}"
-        TargetType="{x:Type shadui:Card}"
-        x:Key="{x:Type shadui:Card}" />
 </ResourceDictionary>

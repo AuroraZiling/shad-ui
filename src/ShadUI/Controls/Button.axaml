@@ -306,7 +306,7 @@
             <Setter Property="Height" Value="36" />
             <Setter Property="FontSize" Value="14" />
             <Setter Property="Padding" Value="16,8" />
-            <Setter Property="Background" Value="{DynamicResource CardBackgroundColor}" />
+            <Setter Property="Background" Value="Transparent" />
             <Setter Property="BorderThickness" Value="1" />
             <Setter Property="BorderBrush" Value="{DynamicResource BorderColor}" />
             <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />
@@ -354,8 +354,8 @@
             <Setter Property="Height" Value="36" />
             <Setter Property="FontSize" Value="14" />
             <Setter Property="Padding" Value="16,8" />
-            <Setter Property="Background" Value="{DynamicResource CardBackgroundColor}" />
-            <Setter Property="BorderBrush" Value="{DynamicResource BorderColor}" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Background" Value="Transparent" />
             <Setter Property="Foreground" Value="{DynamicResource ForegroundColor}" />
             <Style Selector="^ /template/ Border#RootBorder">
                 <Setter Property="Transitions">

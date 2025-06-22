@@ -54,7 +54,7 @@
                             VerticalOffset="{TemplateBinding extensions:MenuItemAssist.PopupVerticalOffset}">
                             <LayoutTransformControl Name="PART_LayoutTransform" RenderTransformOrigin="50%, 0%">
                                 <Border
-                                    Background="{DynamicResource CardBackgroundColor}"
+                                    Background="{DynamicResource PopupBackgroundColor}"
                                     BorderBrush="{DynamicResource BorderColor}"
                                     BorderThickness="1"
                                     BoxShadow="{DynamicResource Shadow}"
@@ -206,7 +206,7 @@
             <Setter Property="BorderThickness" Value="1" />
             <Setter Property="BorderBrush" Value="{DynamicResource BorderColor}" />
             <Setter Property="CornerRadius" Value="{DynamicResource MdCornerRadius}" />
-            <Setter Property="Background" Value="{DynamicResource CardBackgroundColor}" />
+            <Setter Property="Background" Value="Transparent" />
             <Style Selector="^ /template/ Border#root">
                 <Setter Property="Transitions">
                     <Transitions>
@@ -253,7 +253,7 @@
             <Setter Property="FontSize" Value="14" />
             <Setter Property="Padding" Value="16,8" />
             <Setter Property="CornerRadius" Value="{DynamicResource MdCornerRadius}" />
-            <Setter Property="Background" Value="{DynamicResource CardBackgroundColor}" />
+            <Setter Property="Background" Value="Transparent" />
             <Style Selector="^ /template/ Border#root">
                 <Setter Property="Transitions">
                     <Transitions>
